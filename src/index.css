@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%; /* brand-background-light (white) */
+		--foreground: 215 25% 27%; /* brand-text-dark (dark gray for text) */
+
+		--card: 0 0% 100%;
+		--card-foreground: 215 25% 27%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 215 25% 27%;
+
+		--primary: 200 82% 70%; /* brand-sky-blue */
+		--primary-foreground: 215 25% 27%; /* text on sky blue - dark gray */
+
+		--secondary: 210 70% 45%; /* brand-secondary-blue */
+		--secondary-foreground: 0 0% 100%; /* text on secondary blue - white */
+
+		--muted: 210 20% 90%; /* brand-neutral-light (light gray) */
+		--muted-foreground: 215 20% 45%; /* muted text - medium gray */
+
+		--accent: 200 82% 85%; /* lighter sky-blue for accents */
+		--accent-foreground: 215 25% 27%;
+
+		--destructive: 0 72% 51%;
+		--destructive-foreground: 0 0% 100%;
+
+		--border: 210 20% 85%; /* brand-neutral-medium (gray border) */
+		--input: 210 20% 96%; /* light gray for input background */
+		--ring: 200 82% 70%; /* brand-sky-blue for focus ring */
+
+		--radius: 0.75rem;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-family: 'Inter', sans-serif;
+    /* overflow-x: hidden; Ensure this doesn't conflict with page-specific scroll needs */
+	}
+  html, body {
+    width: 100%;
+    overflow-x: hidden; /* Apply to html and body to prevent horizontal scroll */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+  
+  /* Hide scrollbars globally while maintaining scroll functionality */
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-sky-blue to-brand-primary-blue;
+}
+
+.glassmorphism-card {
+  background: rgba(224, 242, 254, 0.6); /* Light Sky Blue with more opacity */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(135, 206, 235, 0.5); /* Sky Blue border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+  
