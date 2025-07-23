@@ -33,7 +33,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-brand-text-dark">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/cp-sports-academy" className="text-gray-600 hover:text-brand-primary-blue transition-colors">CP Sports Academy</Link></li>
+           {/* <li><Link to="/cp-sports-academy" className="text-gray-600 hover:text-brand-primary-blue transition-colors">CP Sports Academy</Link></li>*/}
             <li><Link to="/cp-infra" className="text-gray-600 hover:text-brand-primary-blue transition-colors">CP Infra</Link></li>
             <li><Link to="/cp-infotech" className="text-gray-600 hover:text-brand-primary-blue transition-colors">CP Infotech</Link></li>
             <li><Link to="/international-scouting" className="text-gray-600 hover:text-brand-primary-blue transition-colors">International Scouting</Link></li>

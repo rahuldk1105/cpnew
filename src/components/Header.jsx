@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 const navItems = [
   { name: 'Home', path: '/' },
-  { name: 'Sports Academies', path: '/cp-sports-academy' },
+ // { name: 'Sports Academies', path: '/cp-sports-academy' },
   { name: 'Sports Infra', path: '/cp-infra' },
   { name: 'Infotech & Solutions', path: '/cp-infotech' },
   { name: 'International Scouting', path: '/international-scouting' },
