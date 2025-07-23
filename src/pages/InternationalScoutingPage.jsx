@@ -40,11 +40,10 @@ const InternationalScoutingPage = () => {
   ];
 
   const tournamentImages = [
-    { id: 1, srcKey: "tournament-action-1", alt: "Indian youth football team competing in an international tournament in Europe" },
-    { id: 2, srcKey: "tournament-celebration-1", alt: "CP SPORTS scouted players celebrating a goal at an overseas match" },
-    { id: 3, srcKey: "tournament-team-photo-1", alt: "Group photo of Indian contingent at an international sports event" },
-    { id: 4, srcKey: "tournament-action-2", alt: "Young Indian athlete showcasing skills at a global scouting event" },
-    { id: 5, srcKey: "tournament-award-1", alt: "CP SPORTS player receiving an award at an international competition" },
+    { id: 1, src: "/international_pics/464749902_17944385687885915_7431740644238068825_n.jpg", alt: "Tournament action 1" },
+    { id: 2, src: "/international_pics/492064899_17965223318885915_4354975159856181610_n..jpg", alt: "Tournament action 2" },
+    { id: 3, src: "/international_pics/494358069_17965426043885915_5178496853979568054_n..jpg", alt: "Tournament action 3" },
+    { id: 4, src: "/international_pics/Screenshot 2025-07-23 at 4.27.11 PM.png", alt: "Tournament action 4" },
   ];
 
   const partners = [
@@ -77,7 +76,7 @@ const InternationalScoutingPage = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
         >
-          <img  class="w-full h-full object-cover" alt="Young Indian footballer skillfully dribbling past opponents on an international pitch" src="https://images.unsplash.com/photo-1593018007981-2936f16980af" />
+          <img className="w-full h-full object-cover" alt="Young Indian footballer skillfully dribbling past opponents on an international pitch" src="/international_pics/464749902_17944385687885915_7431740644238068825_n.jpg" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-primary-blue/70 via-brand-primary-blue/30 to-transparent"></div>
         </motion.div>
         
@@ -177,7 +176,7 @@ const InternationalScoutingPage = () => {
                 <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="aspect-[4/3] bg-gray-200 rounded-lg shadow-md overflow-hidden group">
-                      <img  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt={image.alt} src={`https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-${image.id}.2.1&auto=format&fit=crop&w=800&q=70`} />
+                      <img className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt={image.alt} src={image.src} />
                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-3">
                          <p className="text-brand-text-light text-xs font-medium drop-shadow-sm">{image.alt.substring(0,40)}...</p>
                        </div>
@@ -192,6 +191,7 @@ const InternationalScoutingPage = () => {
         </div>
       </motion.section>
 
+      {/* Our Esteemed Partners section - commented out as requested
       <motion.section
         className="container mx-auto px-4"
         variants={sectionVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} custom={4}
@@ -206,7 +206,7 @@ const InternationalScoutingPage = () => {
               className="flex justify-center items-center p-4 glassmorphism-card rounded-lg h-24"
               variants={sectionVariants} custom={index}
             >
-              <img  class="max-h-12 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt={partner.description} src={`https://images.unsplash.com/photo-160000000000${index}?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80`} />
+              <img  className="max-h-12 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt={partner.description} src={`https://images.unsplash.com/photo-160000000000${index}?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80`} />
             </motion.div>
           ))}
         </div>
@@ -214,6 +214,7 @@ const InternationalScoutingPage = () => {
           We collaborate with leading sports federations, clubs, and organizations worldwide to create unparalleled opportunities for talented athletes.
         </p>
       </motion.section>
+      */}
 
       <motion.section 
         className="text-center py-12 bg-gradient-to-r from-brand-sky-blue/10 via-brand-primary-blue/5 to-brand-sky-blue/10 mt-12 rounded-lg"

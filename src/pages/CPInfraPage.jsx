@@ -78,14 +78,18 @@ const CPInfraPage = () => {
   ];
 
   const galleryImages = [
-    { id: 1, alt: "Construction site of a stadium", description: "Stadium under construction with cranes" },
-    { id: 2, alt: "Laying artificial turf", description: "Workers laying rolls of artificial turf" },
-    { id: 3, alt: "Installing stadium floodlights", description: "Technicians installing large floodlights on a stadium" },
-    { id: 4, alt: "Newly completed basketball court", description: "Shiny new indoor basketball court" },
-    { id: 5, alt: "Drone view of a sports complex", description: "Aerial shot of a sprawling sports complex" },
-    { id: 6, alt: "Detail of running track surface", description: "Close-up of a red synthetic running track surface" },
-    { id: 7, alt: "Modern stadium seating", description: "Rows of colorful modern stadium seats" },
-    { id: 8, alt: "Blueprint of a sports facility", description: "Architectural blueprint of a sports facility design" },
+    { id: 1, alt: "Indoor sports facility framework", description: "Metal framework structure for indoor sports facility", imageUrl: "/infra-gallery/project-1.jpg" },
+    { id: 2, alt: "Indoor sports facility construction", description: "Construction progress of indoor sports facility with metal framework", imageUrl: "/infra-gallery/project-2.jpg" },
+    { id: 3, alt: "Outdoor volleyball court", description: "Marked volleyball court on natural ground with boundary lines", imageUrl: "/infra-gallery/project-3.jpg" },
+    { id: 4, alt: "Sports ground excavation", description: "Excavation work for sports ground with JCB excavator", imageUrl: "/infra-gallery/project-4.jpg" },
+    { id: 5, alt: "Indoor court preparation", description: "Indoor court with red clay surface preparation", imageUrl: "/infra-gallery/project-5.jpg" },
+    { id: 6, alt: "Construction site of a stadium", description: "Stadium under construction with cranes", imageUrl: "/infra-gallery/project-6.jpg" },
+    { id: 7, alt: "Laying artificial turf", description: "Workers laying rolls of artificial turf", imageUrl: "/infra-gallery/project-7.jpg" },
+    { id: 8, alt: "Installing stadium floodlights", description: "Technicians installing large floodlights on a stadium", imageUrl: "/infra-gallery/project-8.jpg" },
+    { id: 9, alt: "Newly completed basketball court", description: "Shiny new indoor basketball court", imageUrl: "/infra-gallery/project-9.jpg" },
+    { id: 10, alt: "Drone view of a sports complex", description: "Aerial shot of a sprawling sports complex", imageUrl: "/infra-gallery/project-10.jpg" },
+    { id: 11, alt: "Detail of running track surface", description: "Close-up of a red synthetic running track surface", imageUrl: "/infra-gallery/project-11.jpg" },
+    { id: 12, alt: "Modern stadium seating", description: "Rows of colorful modern stadium seats", imageUrl: "/infra-gallery/project-12.jpg" },
   ];
 
 
@@ -116,7 +120,7 @@ const CPInfraPage = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
         >
-          <img  class="w-full h-full object-cover" alt="Aerial drone shot of a large sports complex under construction" src="https://images.unsplash.com/photo-1583599937230-fd86f496e52b" />
+          <img  className="w-full h-full object-cover" alt="Aerial drone shot of a large sports complex under construction" src="https://images.unsplash.com/photo-1583599937230-fd86f496e52b" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-primary-blue/60 via-brand-primary-blue/20 to-transparent"></div>
         </motion.div>
 
@@ -196,6 +200,7 @@ const CPInfraPage = () => {
       </motion.section>
       
     
+      {/* Commented out Our Completed Projects section
       <motion.section
         className="container mx-auto px-4"
         variants={sectionVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} custom={4}
@@ -212,7 +217,7 @@ const CPInfraPage = () => {
               custom={index * 0.1} 
             >
               <div className="relative h-56">
-                <img  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt={project.imageAlt} src="https://images.unsplash.com/photo-1697256200022-f61abccad430" />
+                <img  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt={project.imageAlt} src="https://images.unsplash.com/photo-1697256200022-f61abccad430" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4">
                   <h3 className="text-xl font-semibold text-brand-text-light mb-1">{project.name}</h3>
@@ -231,6 +236,7 @@ const CPInfraPage = () => {
           ))}
         </div>
       </motion.section>
+      */}
 
       <motion.section
         className="py-16 bg-brand-neutral-light/30"
@@ -250,7 +256,7 @@ const CPInfraPage = () => {
                 whileHover={{ scale: 1.05, zIndex: 10 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <img  class="w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-300" alt={image.alt} src="https://images.unsplash.com/photo-1694388001616-1176f534d72f" />
+                <img className="w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-300" alt={image.alt} src={image.imageUrl} />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-2">
                   <LucideImage className="w-10 h-10 text-brand-text-light" />
                 </div>

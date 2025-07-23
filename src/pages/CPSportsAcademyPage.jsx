@@ -8,54 +8,53 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const academyLocationsData = [
   {
-    id: "mumbai-central",
-    name: "Mumbai Central",
-    imageDescription: "CP Sports Academy Mumbai Central branch exterior",
+    id: "pallavaram-vels",
+    name: "CP SPORTS ACADEMY @ VELS",
+    imageDescription: "CP Sports Academy at VELS, Pallavaram, Chennai",
     imageUrl: "https://images.unsplash.com/photo-1560089020-57900937584d?auto=format&fit=crop&w=1050&q=80",
-    mapLink: "https://www.google.com/maps/search/?api=1&query=19.0760,72.8777",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=12.9692,80.1636",
     gallery: [
-      { id:1, srcKey: "mumbai-facility-1", alt: "Mumbai indoor cricket nets", imageDescription: "Indoor cricket nets at CP Sports Mumbai" },
-      { id:2, srcKey: "mumbai-facility-2", alt: "Mumbai football turf", imageDescription: "Football turf at CP Sports Mumbai"  },
-      { id:3, srcKey: "mumbai-facility-3", alt: "Mumbai gym area", imageDescription: "Gym area at CP Sports Mumbai" },
+      { id:1, srcKey: "vels-facility-1", alt: "VELS football field", imageDescription: "Football field at CP Sports Academy VELS" },
+      { id:2, srcKey: "vels-facility-2", alt: "VELS basketball court", imageDescription: "Basketball court at CP Sports Academy VELS"  },
+      { id:3, srcKey: "vels-facility-3", alt: "VELS badminton court", imageDescription: "Badminton court at CP Sports Academy VELS" },
     ],
     sports: [
-      { name: "Cricket", monthly: 5000, quarterly: 14000, annually: 50000, icon: <Trophy className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
-      { name: "Football", monthly: 4500, quarterly: 12500, annually: 45000, icon: <Sparkles className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
-      { name: "Athletics", monthly: 4000, quarterly: 11000, annually: 40000, icon: <Sun className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Football", monthly: 4500, quarterly: 12500, annually: 45000, icon: <Trophy className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Basketball", monthly: 4800, quarterly: 13000, annually: 48000, icon: <Sparkles className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Badminton", monthly: 4200, quarterly: 11500, annually: 42000, icon: <Sun className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Skating", monthly: 4000, quarterly: 11000, annually: 40000, icon: <Sun className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
     ]
   },
   {
-    id: "delhi-north",
-    name: "Delhi North",
-    imageDescription: "CP Sports Academy Delhi North branch facilities",
+    id: "chrompet-ggn",
+    name: "CP SPORTS ACADEMY @ GGN",
+    imageDescription: "CP Sports Academy at GGN, Chrompet, Chennai",
     imageUrl: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1050&q=80",
-    mapLink: "https://www.google.com/maps/search/?api=1&query=28.7041,77.1025",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=12.9516,80.1462",
     gallery: [
-      { id:1, srcKey: "delhi-facility-1", alt: "Delhi basketball court", imageDescription: "Basketball court at CP Sports Delhi" },
-      { id:2, srcKey: "delhi-facility-2", alt: "Delhi athletics track", imageDescription: "Athletics track at CP Sports Delhi" },
-      { id:3, srcKey: "delhi-facility-3", alt: "Delhi badminton court", imageDescription: "Badminton court at CP Sports Delhi" },
+      { id:1, srcKey: "ggn-facility-1", alt: "GGN football field", imageDescription: "Football field at CP Sports Academy GGN" },
+      { id:2, srcKey: "ggn-facility-2", alt: "GGN basketball court", imageDescription: "Basketball court at CP Sports Academy GGN" },
+      { id:3, srcKey: "ggn-facility-3", alt: "GGN pickle ball court", imageDescription: "Pickle ball court at CP Sports Academy GGN" },
     ],
     sports: [
-      { name: "Basketball", monthly: 5500, quarterly: 15000, annually: 55000, icon: <Trophy className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
-      { name: "Athletics", monthly: 4200, quarterly: 11500, annually: 42000, icon: <Sparkles className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
-      { name: "Badminton", monthly: 4800, quarterly: 13000, annually: 48000, icon: <Sun className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Football", monthly: 4500, quarterly: 12500, annually: 45000, icon: <Trophy className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Basketball", monthly: 4800, quarterly: 13000, annually: 48000, icon: <Sparkles className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Pickle Ball", monthly: 4200, quarterly: 11500, annually: 42000, icon: <Sun className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
     ]
   },
   {
-    id: "bangalore-elite",
-    name: "Bangalore Elite",
-    imageDescription: "CP Sports Academy Bangalore Elite training grounds",
+    id: "chrompet-diamond",
+    name: "CP SPORTS ACADEMY @ DIAMOND SPORT ARENA",
+    imageDescription: "CP Sports Academy at Diamond Sport Arena, Chrompet, Chennai",
     imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1050&q=80",
-    mapLink: "https://www.google.com/maps/search/?api=1&query=12.9716,77.5946",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=12.9516,80.1462",
     gallery: [
-      { id:1, srcKey: "bangalore-facility-1", alt: "Bangalore swimming pool", imageDescription: "Swimming pool at CP Sports Bangalore" },
-      { id:2, srcKey: "bangalore-facility-2", alt: "Bangalore tennis courts", imageDescription: "Tennis courts at CP Sports Bangalore" },
-      { id:3, srcKey: "bangalore-facility-3", alt: "Bangalore yoga studio", imageDescription: "Yoga studio at CP Sports Bangalore" },
+      { id:1, srcKey: "diamond-facility-1", alt: "Diamond football field 1", imageDescription: "Football field 1 at CP Sports Academy Diamond" },
+      { id:2, srcKey: "diamond-facility-2", alt: "Diamond football field 2", imageDescription: "Football field 2 at CP Sports Academy Diamond" },
+      { id:3, srcKey: "diamond-facility-3", alt: "Diamond training area", imageDescription: "Training area at CP Sports Academy Diamond" },
     ],
     sports: [
-      { name: "Swimming", monthly: 6000, quarterly: 16000, annually: 60000, icon: <Trophy className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
-      { name: "Tennis", monthly: 5800, quarterly: 15500, annually: 58000, icon: <Sparkles className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
-      { name: "Yoga & Wellness", monthly: 3500, quarterly: 9000, annually: 35000, icon: <Sun className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
+      { name: "Football", monthly: 4500, quarterly: 12500, annually: 45000, icon: <Trophy className="w-5 h-5 mr-2 text-brand-secondary-blue"/> },
     ]
   },
 ];
@@ -63,12 +62,12 @@ const academyLocationsData = [
 
 const CPSportsAcademyPage = () => {
   const iconColor = "text-brand-primary-blue";
-  const [selectedLocationId, setSelectedLocationId] = useState(academyLocationsData[0].id);
+  const [selectedLocationId, setSelectedLocationId] = useState("pallavaram-vels");
 
   const heroImages = [
-    { id: 1, srcKey: "hero-training-1", alt: "Athlete sprinting on a track", title: "Unleash Your Speed", description: "Peak performance training programs." },
-    { id: 2, srcKey: "hero-training-2", alt: "Team huddle during a match", title: "Master Team Dynamics", description: "Strategic and collaborative sports education." },
-    { id: 3, srcKey: "hero-training-3", alt: "Focused athlete during practice", title: "Achieve Your Goals", description: "Personalized coaching for success." },
+    { id: 1, srcKey: "hero-training-1", alt: "Football training at CP Sports Academy", title: "Elite Football Training", description: "Professional coaching across all our Chennai branches." },
+    { id: 2, srcKey: "hero-training-2", alt: "Basketball practice at CP Sports Academy", title: "Basketball Excellence", description: "Develop your skills at our VELS and GGN facilities." },
+    { id: 3, srcKey: "hero-training-3", alt: "Multi-sport training at CP Sports Academy", title: "Diverse Sports Programs", description: "From badminton to pickle ball at our Chennai academies." },
   ];
   const [currentHeroImage, setCurrentHeroImage] = useState(0);
 
@@ -80,34 +79,19 @@ const CPSportsAcademyPage = () => {
   }, [currentHeroImage, heroImages.length]);
 
   const branches = useMemo(() => [
-    { id: 1, name: "Mumbai Central", lat: 19.0760, lng: 72.8777, imageDescription: "CP Sports Academy Mumbai Central branch exterior" },
-    { id: 2, name: "Delhi North", lat: 28.7041, lng: 77.1025, imageDescription: "CP Sports Academy Delhi North branch facilities" },
-    { id: 3, name: "Bangalore Elite", lat: 12.9716, lng: 77.5946, imageDescription: "CP Sports Academy Bangalore Elite training grounds" },
-    { id: 4, name: "Chennai Champs", lat: 13.0827, lng: 80.2707, imageDescription: "CP Sports Academy Chennai Champs indoor courts" },
-    { id: 5, name: "Kolkata Stars", lat: 22.5726, lng: 88.3639, imageDescription: "CP Sports Academy Kolkata Stars main building" },
-    { id: 6, name: "Hyderabad Hub", lat: 17.3850, lng: 78.4867, imageDescription: "CP Sports Academy Hyderabad Hub sports field" },
-    { id: 7, name: "Pune Powerhouse", lat: 18.5204, lng: 73.8567, imageDescription: "CP Sports Academy Pune Powerhouse gym area" },
-    { id: 8, name: "Ahmedabad Aces", lat: 23.0225, lng: 72.5714, imageDescription: "CP Sports Academy Ahmedabad Aces swimming pool" },
+    { id: 1, name: "CP SPORTS ACADEMY @ VELS", lat: 12.9692, lng: 80.1636, imageDescription: "CP Sports Academy at VELS, Pallavaram, Chennai" },
+    { id: 2, name: "CP SPORTS ACADEMY @ GGN", lat: 12.9516, lng: 80.1462, imageDescription: "CP Sports Academy at GGN, Chrompet, Chennai" },
+    { id: 3, name: "CP SPORTS ACADEMY @ DIAMOND SPORT ARENA", lat: 12.9516, lng: 80.1462, imageDescription: "CP Sports Academy at Diamond Sport Arena, Chrompet, Chennai" },
   ], []);
 
-  const coaches = useMemo(() => [
-    { id: 1, name: "Ravi Sharma", expertise: "Head Coach, Cricket", bio: "Former national player with 15+ years of coaching experience. Specializes in batting technique and strategy.", avatarKey: "coach-ravi", imageDescription: "Portrait of Coach Ravi Sharma" },
-    { id: 2, name: "Priya Singh", expertise: "Lead Coach, Football", bio: "UEFA A License coach with a focus on youth development and tactical gameplay. Proven record of nurturing talent.", avatarKey: "coach-priya", imageDescription: "Portrait of Coach Priya Singh" },
-    { id: 3, name: "Anil Kumar", expertise: "Senior Coach, Athletics", bio: "Certified athletics coach with expertise in sprint and endurance training. Passionate about biomechanics.", avatarKey: "coach-anil", imageDescription: "Portrait of Coach Anil Kumar" },
-    { id: 4, name: "Sunita Reddy", expertise: "Wellness Coach", bio: "Sports psychologist and nutritionist, focusing on holistic athlete development and mental resilience.", avatarKey: "coach-sunita", imageDescription: "Portrait of Coach Sunita Reddy" },
-  ], []);
-  const [hoveredCoach, setHoveredCoach] = useState(null);
 
-  const studentSuccesses = useMemo(() => [
-    { id: 1, name: "Aarav Patel", achievement: "Selected for National U-19 Cricket Team", story: "Aarav joined us at 14 and through rigorous training, honed his skills to become a top-order batsman.", imageKey: "student-aarav", imageDescription: "Aarav Patel in cricket uniform" },
-    { id: 2, name: "Sneha Verma", achievement: "Football Scholarship to a US University", story: "Sneha's dedication and our specialized football program helped her secure a full scholarship abroad.", imageKey: "student-sneha", imageDescription: "Sneha Verma playing football" },
-    { id: 3, name: "Vikram Singh", achievement: "Gold Medalist, National Athletics Meet", story: "Vikram's journey from a novice runner to a national champion is a testament to his hard work and our coaching.", imageKey: "student-vikram", imageDescription: "Vikram Singh with a gold medal" },
-  ], []);
+
+
   
   const facilityWalkthroughs = useMemo(() => [
-    { branch: "Mumbai Central", videoThumbnailKey: "mumbai-facility-thumb", videoUrl: "#", description: "Virtual tour of our Mumbai Central branch", imageDescription: "Thumbnail for Mumbai Central facility walkthrough video" },
-    { branch: "Delhi North", videoThumbnailKey: "delhi-facility-thumb", videoUrl: "#", description: "Explore the Delhi North state-of-the-art facilities", imageDescription: "Thumbnail for Delhi North facility walkthrough video" },
-    { branch: "Bangalore Elite", videoThumbnailKey: "bangalore-facility-thumb", videoUrl: "#", description: "A look inside Bangalore Elite's training grounds", imageDescription: "Thumbnail for Bangalore Elite facility walkthrough video" },
+    { branch: "CP SPORTS ACADEMY @ VELS", videoThumbnailKey: "vels-facility-thumb", videoUrl: "#", description: "Virtual tour of our Pallavaram VELS branch", imageDescription: "Thumbnail for VELS facility walkthrough video" },
+    { branch: "CP SPORTS ACADEMY @ GGN", videoThumbnailKey: "ggn-facility-thumb", videoUrl: "#", description: "Explore the Chrompet GGN state-of-the-art facilities", imageDescription: "Thumbnail for GGN facility walkthrough video" },
+    { branch: "CP SPORTS ACADEMY @ DIAMOND SPORT ARENA", videoThumbnailKey: "diamond-facility-thumb", videoUrl: "#", description: "A look inside Diamond Sport Arena's football grounds", imageDescription: "Thumbnail for Diamond Sport Arena facility walkthrough video" },
   ], []);
 
   const selectedAcademy = useMemo(() => academyLocationsData.find(loc => loc.id === selectedLocationId), [selectedLocationId]);
@@ -138,7 +122,7 @@ const CPSportsAcademyPage = () => {
             transition={{ duration: 1.2, type: "spring", stiffness: 50 }}
             className="absolute inset-0"
           >
-            <img  class="w-full h-full object-cover" alt={heroImages[currentHeroImage].alt} src="https://images.unsplash.com/photo-1632998772668-afc7ae2bc054" />
+            <img  className="w-full h-full object-cover" alt={heroImages[currentHeroImage].alt} src="https://images.unsplash.com/photo-1632998772668-afc7ae2bc054" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-primary-blue/70 via-brand-primary-blue/30 to-transparent"></div>
           </motion.div>
         </AnimatePresence>
@@ -156,7 +140,7 @@ const CPSportsAcademyPage = () => {
             {heroImages[currentHeroImage].description}
           </motion.p>
           <motion.div initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{delay:0.7, duration:0.5}}>
-            <Button size="lg" className="bg-brand-sky-blue hover:bg-brand-secondary-blue text-brand-text-dark hover:text-brand-text-light font-bold shadow-xl">
+            <Button size="lg" className="bg-brand-sky-blue hover:bg-brand-secondary-blue text-brand-text-dark hover:text-brand-text-light font-bold shadow-xl" onClick={() => window.location.href = '/contact'}>
               Join CP Sports Academy <Zap className="ml-2 h-5 w-5"/>
             </Button>
           </motion.div>
@@ -174,44 +158,6 @@ const CPSportsAcademyPage = () => {
       </motion.section>
 
     
-
-      <motion.section
-        className="container mx-auto px-4"
-        variants={sectionVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} custom={2}
-      >
-        <h2 className="text-3xl md:text-4xl font-display text-center mb-12 text-brand-text-dark">
-          Meet Our <span className="gradient-text">Expert Coaches</span>
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {coaches.map((coach) => (
-            <motion.div
-              key={coach.id}
-              className="relative glassmorphism-card p-6 rounded-xl shadow-lg text-center overflow-hidden cursor-pointer"
-              onMouseEnter={() => setHoveredCoach(coach.id)}
-              onMouseLeave={() => setHoveredCoach(null)}
-              variants={sectionVariants} custom={coach.id}
-            >
-              <img  class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-sky-blue object-cover" alt={coach.imageDescription} src="https://images.unsplash.com/photo-1662640010851-6c6db77fbb7d" />
-              <h3 className="text-xl font-semibold text-brand-primary-blue mb-1">{coach.name}</h3>
-              <p className="text-sm text-brand-secondary-blue font-medium">{coach.expertise}</p>
-              <AnimatePresence>
-                {hoveredCoach === coach.id && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    transition={{ duration: 0.3 }}
-                    className="absolute inset-0 bg-brand-primary-blue/90 p-4 flex flex-col justify-center items-center text-brand-text-light"
-                  >
-                    <h4 className="text-lg font-semibold mb-2">{coach.name}</h4>
-                    <p className="text-xs text-center">{coach.bio}</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
-        </div>
-      </motion.section>
 
 
       <motion.section
@@ -252,14 +198,14 @@ const CPSportsAcademyPage = () => {
                 <Building className="w-7 h-7 mr-3 text-brand-secondary-blue"/> {selectedAcademy.name} Facility
               </h3>
               <div className="rounded-xl shadow-xl overflow-hidden aspect-video">
-                <img  class="w-full h-full object-cover" alt={selectedAcademy.imageDescription} src="https://images.unsplash.com/photo-1586251689156-7644aae32835" />
+                <img  className="w-full h-full object-cover" alt={selectedAcademy.imageDescription} src="https://images.unsplash.com/photo-1586251689156-7644aae32835" />
               </div>
               <Button 
-                onClick={() => window.open(selectedAcademy.mapLink, '_blank')} 
+                onClick={() => window.location.href = '/contact'} 
                 variant="outline" 
                 className="w-full border-brand-sky-blue text-brand-sky-blue hover:bg-brand-sky-blue hover:text-brand-text-dark font-medium"
               >
-                <MapPin className="mr-2 h-5 w-5"/> View on Google Maps <ExternalLink className="ml-2 h-4 w-4"/>
+                <MapPin className="mr-2 h-5 w-5"/> Contact Us <ExternalLink className="ml-2 h-4 w-4"/>
               </Button>
             </div>
 
@@ -278,7 +224,7 @@ const CPSportsAcademyPage = () => {
                       <li><span className="font-medium text-gray-700">Quarterly:</span> ₹{sport.quarterly.toLocaleString()} <span className="text-xs text-green-600">(Save ~{Math.round((1 - (sport.quarterly / (sport.monthly * 3)))*100)}%)</span></li>
                       <li><span className="font-medium text-gray-700">Annually:</span> ₹{sport.annually.toLocaleString()} <span className="text-xs text-green-600">(Save ~{Math.round((1 - (sport.annually / (sport.monthly * 12)))*100)}%)</span></li>
                     </ul>
-                    <Button className="w-full mt-4 bg-brand-secondary-blue hover:bg-brand-primary-blue text-brand-text-light">Enroll in {sport.name}</Button>
+                    <Button className="w-full mt-4 bg-brand-secondary-blue hover:bg-brand-primary-blue text-brand-text-light" onClick={() => window.location.href = '/contact'}>Enroll in {sport.name}</Button>
                   </div>
                 ))}
               </div>
@@ -306,7 +252,7 @@ const CPSportsAcademyPage = () => {
                   <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
                       <div className="rounded-xl shadow-lg overflow-hidden aspect-square group">
-                        <img  class="w-full h-full object-cover group-hover:scale-105 transition-transform" alt={image.alt} src="https://images.unsplash.com/photo-1675023112817-52b789fd2ef0" />
+                        <img  className="w-full h-full object-cover group-hover:scale-105 transition-transform" alt={image.alt} src="https://images.unsplash.com/photo-1675023112817-52b789fd2ef0" />
                       </div>
                     </div>
                   </CarouselItem>
@@ -326,10 +272,10 @@ const CPSportsAcademyPage = () => {
         <h2 className="text-3xl md:text-4xl font-display mb-6 text-brand-text-dark">Ready to Unleash Your Potential?</h2>
         <p className="text-lg text-gray-700 mb-8 max-w-xl mx-auto">Join CP Sports Academy and take the first step towards your athletic dreams. Find a center near you or enroll today!</p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <Button size="lg" className="bg-brand-primary-blue hover:bg-brand-secondary-blue text-brand-text-light font-bold">
+          <Button size="lg" className="bg-brand-primary-blue hover:bg-brand-secondary-blue text-brand-text-light font-bold" onClick={() => window.location.href = '/contact'}>
             <Zap className="mr-2 h-5 w-5"/> Join Academy
           </Button>
-          <Button size="lg" variant="outline" className="border-brand-sky-blue text-brand-sky-blue hover:bg-brand-sky-blue hover:text-brand-text-dark font-bold">
+          <Button size="lg" variant="outline" className="border-brand-sky-blue text-brand-sky-blue hover:bg-brand-sky-blue hover:text-brand-text-dark font-bold" onClick={() => window.location.href = '/contact'}>
             <LocateFixed className="mr-2 h-5 w-5"/> Locate Nearest Center
           </Button>
         </div>
